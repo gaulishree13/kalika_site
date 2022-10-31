@@ -1,0 +1,218 @@
+#header{
+    /* background-image: url("carousel-img-1.svg"); */
+    height:384px;
+    width:1375px;
+
+    font-family: Inter sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.1875rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.header-top{
+    background-color: #1E1D60;
+}
+
+/* header-top-info css */
+
+.header-top-info{
+    margin-top: 1rem;
+    margin-right:2.3rem;
+    color:white !important;
+}
+
+.header-top-info li{
+    display: inline;
+    margin-right: 1.3rem;
+    white-space: nowrap;
+    font-family: Inter;
+}
+
+.header-top-info li i{
+    padding-right:0.8rem;
+}
+
+.header-top-info, .header-top-info li > a > i{
+    color:white !important;
+}
+
+@media only screen and (max-width:1130px){
+    .header-top-info{
+        margin-top:0.5rem !important;
+        margin-bottom:2rem !important;
+        /* overflow: hidden; */
+        font-size:0.9rem !important;
+    }
+
+    .header-top-info li{
+        margin-right:0.5rem;
+    }
+
+    .header-top-info li i{
+        padding-right:0.3rem;
+        
+    }
+
+}
+
+@media only screen and (max-width:460px){
+    .header-top{
+        margin-bottom:3rem;
+        display: none !important;
+    }
+    .header-top-info{
+        display: none;
+    }
+}
+
+/* nav bar css */
+
+
+/* .nav-logo{
+    
+} */
+
+.header-logo{
+    margin-top:-0.5rem;
+    margin-left:2rem;
+    width: 7rem;
+    height: 6rem;
+}
+
+@media only screen and (max-width:1100px){
+    .header-logo{
+        width:100px;
+        height: 70px;
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(30, 29, 96, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+
+.navbar-content{
+    margin-right: 2.8rem;
+    margin-top:-2rem;
+    color:white !important;
+}
+
+@media only screen and (max-width:1100px){
+    .navbar-content:after{
+        width:65%;
+        margin-left:5.2rem;
+    }
+   
+    .nav-list{
+        padding:0rem !important;
+        margin:0rem;
+    }
+
+
+    .nav-list-link{
+        font-size:0.2rem;
+        padding:0rem;
+        margin:0rem;
+
+    }
+}
+
+/* @media only screen and (max-width:1133px){
+    .navbar-content:after{
+        width:70%;
+        margin-left:2rem;
+    }
+} */
+
+@media only screen and (max-width:12px){
+    .navbar-content:after{
+        width:75%;
+        margin-left:0rem;
+    }
+
+    .nav-list{
+        /* padding:0.3rem; */
+        margin:0rem;
+        padding:0rem;
+    }
+
+
+    .nav-list-link{
+        font-size:0.7rem;
+        color:#FED81F !important;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .navbar-content:after{
+       width: 0rem;
+    }
+
+    .navbar-content{
+        margin: 0rem 0rem 0rem 0rem;
+        padding-left:2rem;
+        font-size:1rem;
+    }
+}
+
+
+.nav-list-link {
+    display: inline-block;
+    position: relative;
+    color:#1E1D60 !important;
+
+    font-family: Inter !important;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+  
+.nav-list-link:hover{
+    color:#1E1D60 !important
+}
+
+.nav-list-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1E1D60 !important;
+    transform-origin: bottom right;
+    transition: transform 0.08s ease-out;
+}
+  
+.nav-list-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color:#1E1D60 !important;
+}
+
+/* @media only screen and (max-width:1312px){
+    
+} */
+
+@media only screen and (max-width:991px){
+    .nav-list-link{
+        color:#241546 !important;
+    }
+}
+
+.contact-us-link{
+    background-color: #FED81F;
+    border-radius: 1.75rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .contact-us-link {
+      max-width: 122px;
+      margin-left:-5px !important;
+      padding: 8px 8px !important;
+      color:white;
+    }
+  }

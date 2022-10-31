@@ -1,0 +1,46 @@
+﻿{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block body %}
+    <section>
+        <div class="gallery-bg d-flex flex-column justify-content-center">
+            <div class="text-center">
+                <h1 class="header-1 font-weight-bold text-light">Contact Us</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mt-5">
+                <h1>Contact Us</h1>
+                <div class="" style="width: 100%; border-bottom: 2px solid #000;">
+                </div>
+            </div>
+            <form action="{% url 'contacts' %}" method="POST" class="row my-5">
+                {% csrf_token %}
+                <div class="form-group col-md-4">
+                    <label for="name" class="title default-heading-semi-bold">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="email" class="title default-heading-semi-bold">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="subject" class="title default-heading-semi-bold">Subject</label>
+                    <input type="text" id="subject" name="subjects" placeholder="Enter subject" class="form-control">
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="message" class="title default-heading-semi-bold">Message</label>
+                    <textarea name="messages" id="message" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="form-group button-wrapper">
+                        <button type="submit" class="primary-button" name="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <a href="{% url 'index' %">Go to first page</a>
+{% endblock body %}

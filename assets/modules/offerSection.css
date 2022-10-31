@@ -1,0 +1,101 @@
+/* What we offer starts here */
+
+#what-we-offer {
+    background-color: #1E1D60;
+    color: white;
+    /* padding:10px 0 20px 0; */
+    margin-top: 20px;
+}
+
+.offer-image {
+    position: relative;
+}
+.offer-image img{
+    height: 100%;
+    width: 550px;
+    border-top-right-radius: 100px 50%;
+    border-bottom-right-radius: 100px 50%;
+}
+
+.curve-img {
+    margin-left: -99px;
+    height: 100%;  
+}
+
+@media only screen and (max-width:768px){
+    .offer-image img{
+        border-top-right-radius: 0px 0px;
+        border-bottom-right-radius: 0px 0px;
+        width: 100%;
+    }
+    
+    .curve-img {
+        margin-left: 0px;  
+    }
+
+    .offer-image{
+        padding: 0 !important;
+    }
+
+    /* .simple-img{
+        display: block;
+    }
+
+    .curved-img{
+        display: none;
+    } */
+}
+
+
+/* .simple-img{
+    display: none;
+}
+
+.curved-img{
+    display: block;
+} */
+
+.ulOffer{
+    list-style: none;
+    color: white;
+    padding: 0;
+    padding-bottom: 40px;
+}
+
+.ulOffer li{
+    margin: 15px 0 15px 0;
+}
+
+.logo-Offer{
+    height: 70px;
+    width: 70px;
+    background: white;
+    color:black;
+    border-radius: 70px;
+    text-align: center;
+    line-height: 66px;
+    margin-right: 20px;
+}
+
+
+@media only screen and (max-width:492px){
+    .logo-Offer{
+        height: 40px;
+        width: 50px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-Offer img{
+        width: 20px;
+        height: 20px;
+    }
+    /* .simple-img{
+        display: block;
+    }
+
+    .curved-img{
+        display: none;
+    } */
+}

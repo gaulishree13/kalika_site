@@ -1,0 +1,28 @@
+.program-bg{
+    width: 100%;
+    height: 65vh;
+  }
+  
+  .program-bg{
+    background: linear-gradient(0deg, rgba(30, 29, 96, 0.35), rgba(30, 29, 96, 0.35)),url("../../images/school1.jpg") center/cover no-repeat;
+  }
+
+  .programs-heading{
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: Inter sans-serif !important;
+    color:#1E1D60;
+}
+
+.table-heading{
+    color:rgb(219, 82, 52);
+    font-family: Inter sans-serif;
+    font-weight:500;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.6rem !important;
+    padding-left: 0.6rem !important;
+}
+}

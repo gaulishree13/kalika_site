@@ -1,0 +1,335 @@
+﻿{% extends 'base.html' %}
+
+    
+<header id="header has-bg-image">
+    <div class="container-fluid d-flex justify-content-end header-top">
+        <div class="row">
+            <div class="col">
+                <ul class="header-top-info">
+                    <li><i class="fas fa-phone-alt"></i>061 434141, 061 431836, 9856042023, 9868823974</li>
+                    <li><i class="fas fa-envelope"> </i> <a style="color: #fff!important;" href="mailto:kalika977061431141@gmail.com">kalika977061431141@gmail.com</a> </li>
+                    <li><i class="fas fa-sign-out-alt"></i>Staff Portal</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <a class="" href="index.php.html">
+        <img class="logo-image header-logo" src="{% static 'assets/499133/about/2022-05-18/1UhYp8dkv0y4Y49r-1652841072.png' %}" alt="">
+        </a>
+
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end navbar-content" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item nav-list">
+                    <a class="nav-link nav-list-link" href="index.php.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown programs-offered nav-list">
+                    <a class="nav-link nav-list-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ABOUT US<img class="nav-dd-image ml-2" src="{% static 'images/dropdownicon.svg' %}" alt="">
+                    </a>
+                    <div class="dropdown-menu programs-offered-dd" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item programs-offered-dd-items" href="about.php.html">About KALIKA PUBLIC COLLEGE</a>
+                        <a class="dropdown-item programs-offered-dd-items" href="facilities.php.html">Our Facilities</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown programs-offered nav-list">
+                    <a class="nav-link nav-list-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PROGRAMS OFFERED<img class="nav-dd-image ml-2" src="{% static 'images/dropdownicon.svg' %}" alt="">
+                    </a>
+                    <div class="dropdown-menu programs-offered-dd" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item programs-offered-dd-items" href="bbs.php.html">BBS</a>
+                        <a class="dropdown-item programs-offered-dd-items" href="bed.php.html">B.ED</a>
+                    </div>
+                </li>
+                <li class="nav-item nav-list">
+                    <a class="nav-link nav-list-link" href="events.php.html">EVENTS</a>
+                </li>
+                <li class="nav-item nav-list">
+                    <a class="nav-link nav-list-link" href="news.php.html">NEWS</a>
+                </li>
+                <li class="nav-item nav-list">
+                    <a class="nav-link nav-list-link" href="gallery.php.html">GALLERY</a>
+                </li>
+
+                <li class="nav-item nav-list">
+                    <a class="nav-link nav-list-link" href="{% url 'contact' %}">CONTACT US</a>
+                </li>
+                <li class="nav-item nav-list" style="padding-right: 0;">
+                    <a class="nav-link nav-list-link contact-us-link btnadmission" href="contact.php.html">Admission</a>
+                </li>
+            </ul>  
+        </div> 
+    </nav>
+    </header>
+
+    <style>
+        .btnadmission::after{
+                    content: none;
+        }
+    </style>
+<style>
+    
+</style>
+{% block body %}
+<section class="banner">
+    <div class="text-center owl-carousel owl-theme" id="banner-carousel" style="overflow: hidden;">
+        <div class="item">
+        <img src="{% static 'assets/499133/images/school1.jpg' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'images/school-2.jpg' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'images/school3.jpg' %}" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="news-section py-5 px-md-4 px-sm-2">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <div class="d-flex align-items-center">
+                <div class="icon-container mr-2 d-flex justify-content-center align-items-center">
+                    <img src="{% static 'assets/499133/imgs/news.png' %}" style="height: 15px; width: 15px;" alt="">
+                </div>
+                <h1 class="news-title dark-color">News & Updates</h1>
+            </div>
+            <div class="carousel-controls mr-2">
+                <img src="{% static 'assets/499133/imgs/left.png" class="event-prev mr-5" alt="">
+                <img src="{% static 'assets/499133/imgs/right.png" class="event-next" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 item">
+                <div class="text-center owl-carousel owl-theme" id="news-carousel" style="overflow: hidden;">
+                                            <a class="item a-card" href="news.php-1.html?news=701">
+                            <img src="{% static 'assets/499133/news/2022-07-06/SfZX481TVY26FHMD-1657093069.jpg' %}" alt = "" style="width:100%; height: 320px; object-fit: cover; border-radius: 4px;">
+                            <div class="event-car-description ml-1 mt-2">
+                                <p class="dark-color">06 Jul 2022</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3>Test News 2</h3>
+                                    <img src="{% static 'images/redirect.png' %}" alt="icon" style="width: 16px; height: 16px;">
+                                </div>
+                                <p>Test News 2<br></p>
+                            </div>
+                        </a>
+                                            <a class="item a-card" href="news.php-2.html?news=700">
+                            <img src="{% static 'assets/499133/news/2022-07-06/M2ZYLblcD7LALUxU-1657093015.png' %}" alt = "" style="width:100%; height: 320px; object-fit: cover; border-radius: 4px;">
+                            <div class="event-car-description ml-1 mt-2">
+                                <p class="dark-color">06 Jul 2022</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3>Plus 2 Result</h3>
+                                    <img src="images/redirect.png" alt="icon" style="width: 16px; height: 16px;">
+                                </div>
+                                <p>Plus 2 Release Date</p>
+                            </div>
+                        </a>
+                                    </div>
+            </div>
+        </div>
+        <div class="text-center pt-5">
+            <a class="primary-button text-center a-card" href="news.php.html">More News</a>
+        </div>
+    </div>
+</section>
+
+<section class="event-section py-5">
+    <div class="container">
+        <h2 class="text-light text-center">EVENTS</h2>
+        <div class="row mb-5">
+                            <div class="col-md col-md-6 col-lg-4 d-flex align-items-center justify-content-around mt-5">
+                    <div class="date-div">
+                        <p class="day">06</p>
+                        <p class="mnth">Jul</p>
+                    </div>
+                    <div>
+                        <p class="title text-white">Event 2</p>
+                        <p class="time text-white">06 Jul 2022</p>
+                    </div>
+                </div>
+                            <div class="col-md col-md-6 col-lg-4 d-flex align-items-center justify-content-around mt-5">
+                    <div class="date-div">
+                        <p class="day">06</p>
+                        <p class="mnth">Jul</p>
+                    </div>
+                    <div>
+                        <p class="title text-white">Guest Lecture</p>
+                        <p class="time text-white">06 Jul 2022</p>
+                    </div>
+                </div>
+                        <!-- <div class="col-md col-md-6 col-lg-4 d-flex align-items-center justify-content-around mt-5">
+                <div class="date-div">
+                    <p class="day">22</p>
+                    <p class="mnth">May</p>
+                </div>
+                <div>
+                    <p class="title text-white">Essay Workshop</p>
+                    <p class= "time text-white">12 AM - 4 PM</p>
+                </div>
+            </div>
+            <div class="col-md col-md-6 col-lg-4 d-flex align-items-center justify-content-around mt-5">
+                <div class="date-div">
+                    <p class="day">22</p>
+                    <p class="mnth">May</p>
+                </div>
+                <div>
+                    <p class="title text-white">Essay Workshop</p>
+                    <p class= "time text-white">12 AM - 4 PM</p>
+                </div>
+            </div>
+            <div class="col-md col-md-6 col-lg-4 d-flex align-items-center justify-content-around mt-5">
+                <div class="date-div">
+                    <p class="day">22</p>
+                    <p class="mnth">May</p>
+                </div>
+                <div>
+                    <p class="title text-white">Essay Workshop</p>
+                    <p class= "time text-white">12 AM - 4 PM</p>
+                </div>
+            </div>
+            <div class="col-md col-md-6 col-lg-4 d-flex align-items-center justify-content-around mt-5">
+                <div class="date-div">
+                    <p class="day">22</p>
+                    <p class="mnth">May</p>
+                </div>
+                <div>
+                    <p class="title text-white">Essay Workshop</p>
+                    <p class= "time text-white">12 AM - 4 PM</p>
+                </div>
+            </div> -->
+        </div>
+        <div class="text-center pt-5">
+            <a class="primary-button text-center a-card" href="calendar.php.html">View Calendar</a>
+        </div>
+    </div>
+</section>
+
+<section class="about-kalika px-5">
+    <div class="container-fluid">
+        <div class="row py-3">
+            <div class="col-md-6 mb-3">
+                <div class="d-flex">
+                    <img src="images/question-icon.svg" class="quest-icon">
+                    <h1 class="t-32 ml-4">Why Kalika?</h1>
+                </div>
+                <p class="text mb-3">Regardless of age, ethnicity, gender or family back- ground of our students, we support and help them achieve a balance lifestyle of physical, intellectual, emotional, social and spiritual well-being.</p>
+                <ul>
+                    <li>We offer career oriented courses in a reasonable cost, Kalika Public College is located at easily accessible place and out of the madding crowd of the city.</li>
+                    <li>It has a rich library with sufficient text books, reference books, journals, business magazines with a well furnished, spacious and well ventilated reading rooms.</li>
+                    <li>We offer well experienced and dedicated faculties and modern teaching techniques.</li>
+                    <li>As per the syllabus demands, we send our students to different business organization, banks and finance companies for field reports and case studies.</li>
+                    <li>Computer Lab, Play Ground, Canteen & Stage are available.</li>
+                </ul>
+                <div class="row">
+
+                    <a class="primary-button" href="files/kalika-prospectus.pdf" download="">DOWNLOAD PROSPECTUS</a>
+                </div>
+            </div>
+            <div class="col-md-6 float-right kalikaimg">
+               <div class="box2">
+                  <p>I am filled with an ample joy to have a say about Kalika Public College. At Kalika Public College, we value every individual in our care and it is our aim to provide quality education with the best possible environment in which students can achieve their academic goal. We feel proud of providing quality education by equipping our students with skills, confidence and a positive approach with all round development. The college is relentlessly striving to perceive and maintain academic excellence at the same time encouraging the students to participate in various co-curricular and extra-curricular activities.
+                  </p>
+                  <p>
+                     Jyoti Babu Poudel <br> Campus Chief
+                  </p>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="what-we-offer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-12 offer-image">
+                    <div class="curve-img">
+                        <img src="images/offer.jpg" alt="asdas" class="img-fluid curved-img" style="object-fit: cover;">
+                        <!-- this part will be active if we insert two images one for curve and one without curve -->
+                        <!-- <img src="./img/offer1.jpg" alt="asdas" class="img-fluid simple-img"> -->
+                        <!-- partend -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mt-5">
+                    <div class="row p-2">
+                        <div class="col-md-12 d-flex align-items-center">
+                            <div class="logo-Offer"><img src="images/offerlogo.png" alt=""></div>
+                            <h1>
+                                What We offer
+                            </h1>
+                        </div>
+                        <div class="col-md-12 col-12 mt-5 px-4">
+                            <div class="row">
+                                <div class="col-sm-6 col-12">
+                                    <h3>SCHOOL PROGRAMME</h3>
+                                    <ul class="ulOffer">
+                                        <li>Subject Combination  <span><img src="images/chev-right.png" style="height: 12px;"></span></li>
+                                        <li>Education & Career Guidance  <span><img src="images/chev-right.png" style="height: 12px;"></span></li>
+                                        <li>Gallery  <span><img src="images/chev-right.png" style="height: 12px;"></span></li>
+                                        <li>Student Life  <span><img src="images/chev-right.png" style="height: 12px;"></span></li>
+                                        <li>+2 Programmes  <span><img src="images/chev-right.png" style="height: 12px;"></span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <h3>EXTRA CURRICULAM</h3>
+                                    <ul class="ulOffer">
+                                        <li>Library  <span><img src="images/chev-right.png" style="height: 12px;"></span></li>
+                                        <li>Labratories  <span><img src="images/chev-right.png" style="height: 12px;"></span></li>
+                                        <li>Sports  <span><img src="images/chev-right.png" style="height: 12px;"></span></li>
+                                        <li>Gallery  <span><img src="images/chev-right.png" style="height: 12px;"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="testimonial pt-5">
+    <section class="testimonial-curve">
+        <div class="container-fluid w-75 mb-5 testimonial-content">
+            <div class="row">
+                <div class="col-md-12 item">
+                    <div class="d-flex justify-content-center align-items-center mt-5">
+                        <div class="icon-container testimonial-icon text-center d-flex justify-content-center align-items-center">
+                            <img src="images/testimonial-icon.png">
+                        </div>
+                        <h1 style="font-size: 48px; font-weight:700;" class="ml-3 dark-color">Students Speaks</h1>
+                    </div>
+                    <div class="text-center owl-carousel owl-theme" id="testimonial-carousel" style="overflow: hidden;">
+                            <!--  -->
+
+                            <div class="mt-5 item">
+                                   <h2 class="font-weight-normal pb-2 mb-2 t-desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</h2>
+                                   <div>
+                                       <h2 class="header-2 hide-overflow t-desc">Prativa Poudel</h2>
+                                       <h2 class="font-weight-normal header-2 hide-overflow t-desc">+2 passout</h2>
+                                   </div>
+                               </div>
+                               <div class="mt-5 item">
+                                   <h2 class="font-weight-normal pb-2 mb-2 t-desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</h2>
+                                   <div>
+                                       <h2 class="header-2 hide-overflow t-desc">Prabin Dhakal</h2>
+                                       <h2 class="font-weight-normal header-2 hide-overflow t-desc">+2 passout</h2>
+                                   </div>
+                               </div>
+                               <div class="mt-5 item">
+                                   <h2 class="font-weight-normal pb-2 mb-2 t-desc">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</h2>
+                                   <div>
+                                       <h2 class="header-2 hide-overflow t-desc">Aashish Shrestha</h2>
+                                       <h2 class="font-weight-normal header-2 hide-overflow t-desc">BBS student</h2>
+                                   </div>
+                               </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</section>
+{% endblock body %}
+
